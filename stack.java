@@ -1,3 +1,5 @@
+// https://www.javatpoint.com/java-stack#:~:text=The%20stack%20is%20a%20linear,store%20the%20collection%20of%20objects.
+// better explaination and use actual stack instead of makeshift 
 import java.util.Scanner;
 class StackExample {
     int number[];
