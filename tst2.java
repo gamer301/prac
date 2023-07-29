@@ -89,7 +89,7 @@ public class tst2
  */
 //1:05:59 - if statement 
  
-/* */
+/* 
  
 public class tst2 
 {
@@ -106,5 +106,18 @@ public class tst2
     break;
     default: System.out.println("error"); // break not needed since last code in switch 
   }
+  }
+}
+
+*/
+
+/**
+ * tst2
+ */
+public class tst2 
+{
+  public static void main(String[] args) 
+  {
+    
   }
 }
