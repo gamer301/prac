@@ -89,3 +89,22 @@ public class tst2
  */
 //1:05:59 - if statement 
  
+/* */
+ 
+public class tst2 
+{
+  public static void main(String[] args)
+  {  
+  String day = "Friay";
+  switch(day)
+  {
+    case "Sunday": 
+    System.out.println("sunday");
+    break; // if break is not present we will execute all subset of codes after the first subset of code is executed so all sysout willl be executed
+    case "Friday" : 
+    System.out.println("Friday");
+    break;
+    default: System.out.println("error"); // break not needed since last code in switch 
+  }
+  }
+}
