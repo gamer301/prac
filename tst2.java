@@ -118,6 +118,15 @@ public class tst2
 {
   public static void main(String[] args) 
   {
-    
+  String str = "q";
+  int x=1,z=1,y=1;
+    if (x==y && y==z)  // && = both condition must be true : || = either one of the condition must be true  :  ! =  not true ie reverse boolen value
+    {
+      System.out.println("x,y,z are all equal ");  
+    } 
+    if (str.equals("q") || str.equals("Q") ) // to compare string we need specific function  [ string_variable.equal() ]  
+    {
+      System.out.println("string is equal to q to Q ");
+    }
   }
 }
