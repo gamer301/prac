@@ -111,9 +111,8 @@ public class tst2
 
 */
 
-/**
- * tst2
- */
+/*
+ 
 public class tst2 
 {
   public static void main(String[] args) 
@@ -130,3 +129,14 @@ public class tst2
     }
   }
 }
+
+*/
+
+/* */
+public class tst2 
+{
+  public static void main(String[] args) 
+  {
+
+  }
+}  
