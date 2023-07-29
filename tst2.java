@@ -137,6 +137,8 @@ public class tst2
 {
   public static void main(String[] args) 
   {
-
+    String name ="";
+    name.isBlank(); // check if a string is black 
+    // do {} while();  // if just while u don't need ; // do while execute atleast once 
   }
 }  

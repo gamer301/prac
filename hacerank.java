@@ -11,13 +11,13 @@ public class hacerank {
     {          
         int n = 0;
             n=  scr.nextInt();
-        int s[]=new int [n];
         int t1[]=new int [n];
-        for (int j=0; j<=n;j++)
+        int s[]=new int [n];
+        for (int j=0; j<=n-1;j++)
         {
            s[j]=scr.nextInt(); 
         }
-        for (int l=0; l<=n;l++)
+        for (int l=0; l<=n-1;l++)
         {
            t1[l]=scr.nextInt(); 
         }
