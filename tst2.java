@@ -132,3 +132,20 @@ System.out.println(car[0][0]); // for a loop runing only pring u can use (arr[]+
 */
 
 //1:28:15 - string method 
+
+/* */
+
+public class tst2 
+{
+  public static void main(String[] args) 
+  {
+    String Pri = "Pri";
+    boolean equal = true ;
+    equal = Pri.equals("Priyanshu"); // string.equal() will compare and give boolean value can use another string or "" 
+    // equals () is case sensitive to combat that we can use string.equalsIgnoreCase() function 
+    int length = Pri.length();
+    char index = Pri.charAt(2);// acces a particual index of string with .charAt
+
+    System.out.println(index);
+  }
+}  
