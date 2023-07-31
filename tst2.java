@@ -145,7 +145,9 @@ public class tst2
     // equals () is case sensitive to combat that we can use string.equalsIgnoreCase() function 
     int length = Pri.length();
     char index = Pri.charAt(2);// acces a particual index of string with .charAt
-
+    int indexs = Pri.indexOf("r"); // this will find the index of "r" in the string Pri
+    boolean empty = Pri.isEmpty()//will check if no charcter and only whitespace
+    Pri.isBlank();// will check if no char , only whitespace, and is null
     System.out.println(index);
   }
 }  
