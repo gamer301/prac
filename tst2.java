@@ -108,13 +108,27 @@ or not less than the length of the string
  */
 
 
- /* */
+/*
+
 public class tst2 
 {
   public static void main(String[] args) 
   {
+String cars []= {" \" ","\'"}; // if u accest -ve or after size u get arr out of bound error
+String car [][]= new String[30][25];
+ car [0][0]="\\";// u can assig with arr[][]={},{}; where arr[] is empty or pointing to particular row 
 
+ // cars_length = cars.length(); // a function to get length of array
+ // for 2d array arr.length() will give clumn length // arr[0].length will give column length of that particular column 0 can be replaced with i 
+ // so that we get length of that particular row 
+int arr_int [];//array declaration
+arr_int = new int[20]; // allocating meemor to an array 
+// or  int [] arr_int = new int [20]; 
+System.out.println(cars[0]);
+System.out.println(car[0][0]); // for a loop runing only pring u can use (arr[]+" ") for space between each elemnt on print 
   }
 }  
 
-//1:28:15 - array
+*/
+
+//1:28:15 - string method 
