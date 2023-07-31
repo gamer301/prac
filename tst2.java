@@ -209,4 +209,139 @@ public class tst2
 
 */
 
-//1:59:24 -wrapper class
+
+ /* 
+public class tst2 {
+
+ public static void main(String[] args) {
+  
+  // wrapper class =  provides a way to use primitive data types as reference data types
+  //     reference data types contain useful methods
+  // wrapper class increases step need to acces data so for big data wrapper class will increase resouce load 
+  //     can be used with collections (ex.ArrayList)
+  
+  //primitive  //wrapper  //String is already ref
+  //---------  //-------  
+  // boolean  Boolean
+  // char   Character
+  // int   Integer
+  // double  Double
+  
+  // autoboxing = the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes
+  // unboxing = the reverse of autoboxing. Automatic conversion of wrapper class to primitive
+  
+  Boolean a = true;  // all autobox here since wrapper object was assigned primitive value // u can still treat them as prmitive since unboxing is auto 
+  Character b = '@';
+  Integer c = 123;
+  Double d = 3.14;
+  String e = "Pri";
+
+  a.parseBoolean(e) // wrapper class variable have acces to even larger set of functions 
+  
+ }
+ 
+}
+
+*/
+
+
+
+/* 
+
+import java.util.ArrayList;
+
+public class tst2 {
+
+	public static void main(String[] args) 
+  {
+			
+		// ArrayList = 	a resizable array. 
+		//				Elements can be added and removed after compilation phase
+		//				store reference data types // if want to use prim such as int then use wrapper Integer
+		
+		ArrayList<String> food = new ArrayList<String>(); 
+    
+    
+    int arr [] = new int[] {2,3,4,5}; // here new int will create an instance of that array and u can mention size in new Int[size] 
+    // u don't need to give array size if u are directly giving value during initializer with {}
+    // if u don't give value during initializing then u have give value to each elemnt by loop 
+    // array intializing of object can only be done with {} during declaration , u can't declare then give value with {} since array won't be intialized then 
+    
+    
+    // therfore only  leagal way to create array are 
+    
+    
+    // int arr [] = new int[] {} when u want to create blank of specif size remove {} if no value given during declaration
+    
+    
+    // int[] arr2 = {,,} here declaraion and assigning value is one step 
+    
+    
+    // last method will require multiple line of codes 
+    // int arr[]; // declaration 
+    // arr[0]=1; // assignment with intializing 
+
+    // also use  datatype[] VarName as good practive 
+    // ArrayList<datatype> VarName = new ArrayList<datatype>()
+    // ArrayList<datatype> acts as one dataype same with structure in C
+
+    int[] arr2 = {3,3,4,5};
+    System.out.println(arr2[0]);
+		
+		
+    
+    food.add("pizza");
+		food.add("hamburger");
+		food.add("hotdog");
+		
+		food.set(0, "sushi");  // set a value at certain index arrlist.set(index,elemnt)
+		food.remove(2);
+		food.clear();
+		
+		for(int i=0; i<food.size(); i++) // use arraylist.size() instead of arr.length() since diff data type 
+    {
+			System.out.println(food.get(i));
+		}
+	}
+}
+
+*/
+
+
+/* */
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		ArrayList<ArrayList<String>> groceryList = new ArrayList(); // u can change size of list during runtime 
+		
+		ArrayList<String> bakeryList = new ArrayList();
+		bakeryList.add("pasta");
+		bakeryList.add("garlic bread");
+		bakeryList.add("donuts");
+		
+		ArrayList<String> produceList = new ArrayList();
+		produceList.add("tomatoes");
+		produceList.add("zucchini");
+		produceList.add("peppers");
+		
+		ArrayList<String> drinksList = new ArrayList();
+		drinksList.add("soda");
+		drinksList.add("coffee");
+		
+		groceryList.add(bakeryList);
+		groceryList.add(produceList);
+		groceryList.add(drinksList);
+		
+		System.out.println(groceryList);
+		
+	}
+}
+
+
+
+
+//1:59:24 -array list 2D ; 
