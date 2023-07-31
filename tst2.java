@@ -130,10 +130,9 @@ System.out.println(car[0][0]); // for a loop runing only pring u can use (arr[]+
 }  
 
 */
+ 
 
-//1:28:15 - string method 
-
-/* */
+/* 
 
 public class tst2 
 {
@@ -151,7 +150,11 @@ public class tst2
     Pri.toLowerCase()// for lower all element 
     Pri.toUpperCase()// for ucase all elelemnt
     Pri.trim() // remove all space infront and back of string 
-    Pri.replace(index, index) 
+    Pri.replace(index, index) // (old,new)  can use ('r','u')
     System.out.println(index);
   }
 }  
+
+*/
+
+//1:59:24 -wrapper class
