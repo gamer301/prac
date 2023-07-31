@@ -148,6 +148,10 @@ public class tst2
     int indexs = Pri.indexOf("r"); // this will find the index of "r" in the string Pri
     boolean empty = Pri.isEmpty()//will check if no charcter and only whitespace
     Pri.isBlank();// will check if no char , only whitespace, and is null
+    Pri.toLowerCase()// for lower all element 
+    Pri.toUpperCase()// for ucase all elelemnt
+    Pri.trim() // remove all space infront and back of string 
+    Pri.replace(index, index) 
     System.out.println(index);
   }
 }  
