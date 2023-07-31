@@ -88,6 +88,65 @@ public class tst2
  }
  */
 
+
+ /* 
+ 
+public class tst2 
+{
+  public static void main(String[] args)
+  {  
+  String day = "Friay";
+  switch(day)
+  {
+    case "Sunday": 
+    System.out.println("sunday");
+    break; // if break is not present we will execute all subset of codes after the first subset of code is executed so all sysout willl be executed
+    case "Friday" : 
+    System.out.println("Friday");
+    break;
+    default: System.out.println("error"); // break not needed since last code in switch 
+  }
+  }
+}
+*/
+/*
+ 
+public class tst2 
+{
+  public static void main(String[] args) 
+  {
+  String str = "q";
+  int x=1,z=1,y=1;
+    if (x==y && y==z)  // && = both condition must be true : || = either one of the condition must be true  :  ! =  not true ie reverse boolen value
+    {
+      System.out.println("x,y,z are all equal ");  
+    } 
+    if (str.equals("q") || str.equals("Q") ) // to compare string we need specific function  [ string_variable.equal() ]  
+    {
+      System.out.println("string is equal to q to Q ");
+    }
+  }
+}
+*/
+
+
+/* 
+public class tst2 
+{
+  public static void main(String[] args) 
+  {
+
+    String name ="";
+    name.isBlank(); // check if a string is black 
+    // do {} while();  // if just while u don't need ; // do while execute atleast once 
+    // for (;;) {} this will execute an infinite for loop without any para meters
+    // u can initialize multiple variable with for loop  
+
+  }
+}  
+
+*/
+
  /*
 
 Char c = '';
@@ -99,13 +158,6 @@ The method throws IndexOutOfBoundsException if the index argument is negative
 or not less than the length of the string
 
 */
-
-/*
-
- for (;;) {} this will execute an infinite for loop without any para meters
- u can initialize multiple variable with for loop  
-
- */
 
 
 /*
