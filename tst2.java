@@ -87,5 +87,25 @@ public class tst2
   }
  }
  */
-//1:05:59 - if statement 
+
+
+/*  
+
+Char c = '';
+c = scr.next().charAt(0) // next will take input after its exceution 
+unitl u run across space or enter // charAt() is string function which
+u use to take a specific index elemnt of entered string ie if u  use 0
+and enter "hello" only h of the string will be inputed . 
+The method throws IndexOutOfBoundsException if the index argument is negative 
+or not less than the length of the string
+
+*/
+
+/*
+ for (;;) {} this will execute an infinite for loop without any para meters
+ u can initialize multiple variable with for loop  
+ */
+
+ //1:28:15 - array
  
+
