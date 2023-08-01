@@ -312,11 +312,12 @@ public class tst2 {
 
 import java.util.*;
 
-public class Main {
+public class tst2 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+  {
 		
-		ArrayList<ArrayList<String>> groceryList = new ArrayList(); // u can change size of list during runtime 
+		ArrayList<ArrayList<String>> groceryList = new ArrayList(); // u can change size of list during runtime // we create and array list that can stor araylist of string as data type 
 		
 		ArrayList<String> bakeryList = new ArrayList();
 		bakeryList.add("pasta");
@@ -336,7 +337,7 @@ public class Main {
 		groceryList.add(produceList);
 		groceryList.add(drinksList);
 		
-		System.out.println(groceryList);
+		System.out.println(groceryList.get(0).get(2)); // this will display enture list but use ArrayList.get(index) for a specific element can be stacked through for index of index
 		
 	}
 }
@@ -400,5 +401,9 @@ public class tst2 {
 }
 
 
+<<<<<<< Updated upstream
 
 //1:59:24 - Methods
+=======
+//2:18:00 -for each loop; 
+>>>>>>> Stashed changes
