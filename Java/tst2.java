@@ -401,9 +401,7 @@ public class tst2 {
 }
 
 
-<<<<<<< Updated upstream
+
 
 //1:59:24 - Methods
-=======
-//2:18:00 -for each loop; 
->>>>>>> Stashed changes
+
