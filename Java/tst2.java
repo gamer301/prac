@@ -308,7 +308,7 @@ public class tst2 {
 */
 
 
-/* */
+/* 
 
 import java.util.*;
 
@@ -342,6 +342,63 @@ public class Main {
 }
 
 
+*/
+
+/* 
+
+import java.util.ArrayList;
+
+public class tst2 
+{
+
+	public static void main(String[] args) 
+  {
+			
+		// for-each = 	traversing technique to iterate through the elements in an array/collection
+		//				less steps, more readable
+		//				less flexible
+		
+		//String[] animals = {"cat","dog","rat","bird"};
+		ArrayList<String> animals = new ArrayList<String>();
+		
+		animals.add("cat");
+		animals.add("dog");
+		animals.add("rat");
+		animals.add("bird");
+		
+		for(String i : animals) // for ( every_string index :_(represents in) string_var) 
+    // this will iterate once for each element in collections
+    {
+			System.out.println(i);
+		}
+  }  
+}  
+
+*/
+
+/* */
+public class tst2 {
+
+	public static void main(String[] args) 
+  {		
+		// method = a block of code that is executed whenever it is called upon
+		
+		int x = 3;
+		int y = 4;
+		
+		int z = add(x,y);
+
+		System.out.println(z);
+	}
+	
+	static int add(int x, int y) // we use static here since calling from a static main u can't call unstatic method
+  {		
+		int z = x + y;
+		return z;
+	}
+	
+}
 
 
-//1:59:24 -array list 2D ; 
+
+//1:59:24 - Methods
