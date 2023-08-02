@@ -445,7 +445,7 @@ public class tst2 {
 */
 
 
-/* */
+/* 
 
 public class tst2 {
 
@@ -454,6 +454,9 @@ public class tst2 {
 		// printf() = 	an optional method to control, format, and display text to the console window
 		//				two arguments = format string + (object/variable/value)
 		//				% [flags] [precision] [width] [conversion-character]
+
+    // when declaring variable use final to make in immutable -- final int x - 25;
+
 				
 		boolean myBoolean = true;
 		char myChar = '@';
@@ -487,6 +490,42 @@ public class tst2 {
 	}
 }
 
+*/
 
-//  print f 
+
+//*******************************************
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Car myCar1 = new Car();
+		Car myCar2 = new Car();
+
+		System.out.println(myCar1.make);
+		System.out.println(myCar1.model);
+
+		myCar1.drive();
+		myCar1.brake();
+	}
+}
+//*******************************************
+public class Car {
+
+	String make = "Chevrolet";
+	String model = "Corvette";
+	int year = 2020;
+	String color = "blue";
+	double price = 50000.00;
+	
+	void drive() {
+		System.out.println("You drive the car");
+	}
+	void brake() {
+		System.out.println("You step on the brakes");
+	}	
+}
+//*******************************************
+
+
+//  oop- 3:00:00
 
