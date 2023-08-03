@@ -494,7 +494,7 @@ public class tst2 {
 
 
 //*******************************************
-public class Main {
+public class tst2 {
 
 	public static void main(String[] args) {
 		
