@@ -493,22 +493,22 @@ public class tst2 {
 */
 
 
-//*******************************************
+/*
 public class tst2 {
 
 	public static void main(String[] args) {
 		
-		Car myCar1 = new Car();
+		Car myCar1 = new Car();  // class_name uniq_instance_obj_name = new class_name
 		Car myCar2 = new Car();
 
-		System.out.println(myCar1.make);
+		System.out.println(myCar1.make);  // obj_name . Argument_name u want to acces 
 		System.out.println(myCar1.model);
 
 		myCar1.drive();
 		myCar1.brake();
 	}
 }
-//*******************************************
+//************************************************
 public class Car {
 
 	String make = "Chevrolet";
@@ -524,8 +524,45 @@ public class Car {
 		System.out.println("You step on the brakes");
 	}	
 }
-//*******************************************
+*/
 
 
-//  oop- 3:00:00
+//  constructor- 3:0:00
 
+//******************************************************
+public class tst2 {
+
+	public static void main(String[] args) {
+		
+		Human human1 = new Human("Rick",65,70);
+		Human human2 = new Human("Morty",16,50);
+			
+		human1.drink();
+		human2.eat();
+		
+	}
+}
+//******************************************************
+class Human // removed public to acces in same java file  
+{
+
+	String name;
+	int age;
+	double weight;
+	
+	Human(String name,int age,double weight){
+		
+		this.name = name;
+		this.age = age;
+		this.weight = weight;
+	}
+	
+	void eat() {
+		System.out.println(this.name+" is eating");
+	}
+	void drink() {
+		System.out.println(this.name+" is drinking *burp*");
+	}
+		
+}
+//******************************************************
