@@ -539,6 +539,9 @@ public class tst2 {
 			
 		human1.drink();
 		human2.eat();
+    String name = System.console().readLine();
+ 
+    System.out.println("You entered string " + name);
 		
 	}
 }
