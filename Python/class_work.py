@@ -26,7 +26,7 @@ print(self.fare)
     self.total_fare= self.fare + ((self.fare /100)*10)
 
     """
-    self.total_fare= fare() + ((fare() /100)*10)
+    self.total_fare= super().fare() + ((super().fare() /100)*10)
     """
 
 bus1=bus()
