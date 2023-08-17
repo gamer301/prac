@@ -534,8 +534,8 @@ public class tst2 {
 
 	public static void main(String[] args) {
 		
-		Human human1 = new Human("Rick",65,70);
-		Human human2 = new Human("Morty",16,50);
+		Human human1 = new Human("Rick",65,70); // calling the constructor like a method 
+		Human human2 = new Human("Morty",16,50);// compulsory to pass value if constructor has parameters 
 			
 		human1.drink();
 		human2.eat();
@@ -549,14 +549,15 @@ public class tst2 {
 class Human // removed public to acces in same java file  
 {
 
-	String name;
+	String name; // create variables for human class 
 	int age;
 	double weight;
 	
-	Human(String name,int age,double weight){
-		
-		this.name = name;
-		this.age = age;
+	Human(String name,int age,double weight) // the arguments passed to constructor are from another class 
+  // same name as class for constructor or use THIS/self in  other lang
+  {
+		this.name = name; // used this as general term since many object form this class can be created 
+		this.age = age; // this.age assigns the value age passed to constructor 
 		this.weight = weight;
 	}
 	
