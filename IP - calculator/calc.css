@@ -18,7 +18,7 @@ body {
 
 #display {
     font-size: 24px;
-    width: 92.5%;
+    width: 92%;
     padding: 10px;
     margin-bottom: 10px;
     text-align: right;
@@ -27,7 +27,7 @@ body {
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 10px;
 }
 
 button {
@@ -57,14 +57,7 @@ button:hover {
     grid-column: span 2;
 }
 
-
-#backspace
+#clear
 {
     grid-column: span 2;
-}
-
-.backspace 
-{
-    background-color: #f39c12;
-    color: #fff;
 }

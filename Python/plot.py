@@ -1,11 +1,50 @@
-import matplotlib.pyplot as plt
-import numpy as np
+# Python code to demonstrate
+# how parent constructors are called.
+	
+# parent class
+class Person( object ):	
+	
+		# __init__ is known as the constructor		
+		def __init__(self, name, idnumber):	
+				self.name = name
+				self.idnumber = idnumber
+				
+		def display(self):
+				print(self.name)
+				print(self.idnumber)
+	
+# child class
+class Employee( Person ):			
+		def __init__(self, name, idnumber, salary):
+				self.salary = salary
+	
+				# invoking the constructor of
+				# the parent class
+				Person.__init__(self, name, idnumber)
+		
+		def show(self):
+			print(self.salary)
+			
 
-xpoints = np.array([1, 8])
-ypoints = np.array([3, 10])
+class Employee2( Person ):			
+		def __init__(self,salary, name="null2", idnumber=00 ):
+				self.salary = salary
+				super().__init__(name, idnumber)
+				# invoking the constructor of
+				# the parent class
+				#Person.__init__(self, name, idnumber)
+                
+		
+		def show(self):
+			print(self.salary)
+			print(self.name)  
+			print(self)        
+	
+					
 
-plt.scatter(xpoints, ypoints,marker='+',ms-25,mc='b',label='random') 
-# u can just use x or y point and it wil take default value from 1,2,3,4 with step of 1 
-#plt.plot(xpoints,marker='H') if u dont use market argument the point won't be connected and only specific points will be marked withou joining them with line 
+b =  Person ("pri",301)
+c = Employee2(32)	
 
-plt.show()
+b.display()
+c.display()
+c.show()

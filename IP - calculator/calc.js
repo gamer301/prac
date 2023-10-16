@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const display = document.getElementById("display");
     const buttons = document.querySelectorAll("button");
+    
 
     let currentInput = "";
     let operator = "";
@@ -8,10 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let secondOperand = "";
     let result = "";
 
-    buttons.forEach(button => 
-        {
-        button.addEventListener("click", function () 
-        {
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
             const buttonText = button.textContent;
 
             if (buttonText === "C") {
@@ -28,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    document.body.style.backgroundImage ="url('https://source.unsplash.com/1600x900/?book')";
+
 
     function clear() {
         currentInput = "";
@@ -63,28 +65,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function backspace() 
-    {
-        currentInput = currentInput.slice(-1);
-        currentInput = currentInput.replace("&#9003;"," ")
+    function backspace() {
+        currentInput = currentInput.slice(0, -1);
         updateDisplay();
     }
 
-    function handleOperator(op) 
-    {        
-         if (currentInput) 
-          {
+    function handleOperator(op) {
+        if (currentInput) {
             firstOperand = currentInput;
             operator = op;
-            currentInput = currentInput + operator;
-            currentInput = currentInput.replace("&#9003;","")
-            updateDisplay();  
-          }   
+            currentInput = "";
+            updateDisplay();
+        }
     }
 
-    function updateDisplay() 
-    {
-
+    function updateDisplay() {
         display.value = currentInput || "0";
     }
 });
