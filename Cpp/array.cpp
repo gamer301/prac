@@ -1,7 +1,25 @@
 #include <iostream>
 using namespace std;
-
-int main ()
+class arr
 {
-    j
-}
+ public :
+  arr()
+  {
+    cout<<"construc"<<endl;
+  }
+    arr(char a)
+  {
+    cout<<"construc para:"<<a<<endl;
+  }
+  ~arr()
+  {
+    cout<<"\ndestructor";
+  }
+
+
+}instance('u');
+
+  int main ()
+  {
+      cout<<"main";
+  }
