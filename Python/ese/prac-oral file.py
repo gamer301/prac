@@ -1,4 +1,11 @@
 import pickle 
+
+import os
+file_path = "example.txt"
+if os.path.exists(file_path):
+    print(f"The file {file_path} exists.")
+
+    
 sum1=0
 with open ("sale.dat","rb") as F1:
     #d= {'a': 100, 'b': 200, 'c': 300}
@@ -10,7 +17,7 @@ with open ("sale.dat","rb") as F1:
     #print(list(x.values())[0])
     #for i in x:      
       #print (x[i])
-    #l=[('a',100),('b',100),('c',100)]
+    #l=[('a',100),('b',100),('c',100)]  # zip(l1,l2) 
     #pickle.dump(l,F1)
     #print(pickle.load(F1))
     while True:
@@ -28,10 +35,10 @@ try:
 
 with open('file_path, 'r') as file:
           
- text = file.read()
+ text = file.read() # returns string 
 # Split the text into words and count occurrences of the target word
  words = text.split()
- word_count = words.count(word_to_count)
+ word_count = words.count(word_to_count) # counts occurance of word_... in string 
  return word_count
 
 except FileNotFoundError:
@@ -52,7 +59,14 @@ def hash_display(file_path):
  try:
     with open(file_path, 'r') as file:
     content = file.read()
-    formatted_content = "#".join(content)
+    formatted_content = "#".join(content) # join for list,string as well 
     print(formatted_content)
+    content = file.read(10)  # Read first 10 characters
+    file.seek(0)  # Move the pointer to the beginning
+    new_content = file.read(5)  # Read next 5 characters from the start
+
+
+
  except FileNotFoundError:
    print(f"File '{file_path}' not found.")
+

@@ -9,7 +9,7 @@ root.geometry('500x500')
 
     
 lbl = Label (root,text="Hello",foreground="yellow")
-lbl.grid()
+lbl.grid() # grids of x,y 
 
 
 input = Entry(root,width=10)
@@ -55,5 +55,8 @@ def clicked():
 
 btn1 = Button(root,text = "Click me",command=clicked)
 btn1.grid(column=3, row=5)
+
+txt = Entry(root, width=10)
+txt.grid(column =1, row =0)
 
 root.mainloop()
