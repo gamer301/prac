@@ -70,6 +70,6 @@ CREATE INDEX - Used to create and retrieve data from the database very quickly
 
 
 
-Insert: Using INSERT INTO table_name (column1, column2, ...) VALUES (%s, %s, ...).
-Delete: Using DELETE FROM table_name WHERE condition.
-Update: Using UPDATE table_name SET column1 = value1 WHERE condition.
+Insert: Using "INSERT INTO table_name (column1, column2, ...) VALUES (%s, %s, ...).
+Delete: Using "DELETE FROM table_na"me WHERE condition".
+Update: Using "UPDATE table_name SET column1 = value1 WHERE condition".
