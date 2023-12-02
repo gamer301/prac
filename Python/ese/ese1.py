@@ -105,6 +105,7 @@ print(list_of_tuples)
 user_input = input("Enter a string: ")
 reverse_string = list(user_input)
 reverse_string.sort(reverse=True)
+x=reversed(var)
 #rev_sort=sorted(reverse_sort,reverse=True)
 #rev_order=sorted(reverse_sort)
 # input_string[::-1]
@@ -113,6 +114,9 @@ reverse_string.sort(reverse=True)
 #Check if "free" is present in the following text:
 #list/string/dict .count()
 #len() for string
+
+# Merge(,) 
+
 
 txt = "The best things in life are free!"
 print("free" in txt)
